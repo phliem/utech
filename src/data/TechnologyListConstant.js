@@ -16,7 +16,7 @@ export default TECHNOLOGIES = [
         id: 2,
         name: 'React',
         author: 'Facebook',
-        url: 'https://react.com',
+        url: 'https://reactjs.org/',
         githubUrl: 'https://api.github.com/repos/facebook/react',
         logo: LogoReact,
     }, {
