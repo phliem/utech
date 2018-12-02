@@ -3,7 +3,7 @@ import { StyleSheet, View, Text } from 'react-native';
 
 const GraphTab = () => (
     <View style={styles.container}>
-        <Text>GraphTab</Text>
+        <Text>Hello test</Text>
     </View>
 );
 

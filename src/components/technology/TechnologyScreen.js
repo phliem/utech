@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { StyleSheet, View, Text, Image } from 'react-native';
 
 import SectionGithub from './section/SectionGithub.js';
@@ -7,10 +7,7 @@ import SectionStackoverflow from './section/SectionStackoverflow.js';
 // import axios from 'axios';
 import TechnologyItemConstant from '../../data/TechnologyListConstant.js';
 
-export default class TechnologyInfo extends Component {
-    static navigationOptions = {
-        header: null,
-    };
+export default class TechnologyInfo extends PureComponent {
 
     constructor(props) {
         super(props);
@@ -37,13 +34,12 @@ export default class TechnologyInfo extends Component {
 
         this.setState({
             ...currentTechnology,
-            imageUrl: require('../../asset/logo/logo_reactjs.png')
+            imageUrl: require('../../asset/logo/logo_react.png')
         });
 
     }
 
     render() {
-        const imageUrl = 
 
         console.log('this.state', this.state);
 

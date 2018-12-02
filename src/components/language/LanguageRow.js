@@ -12,6 +12,11 @@ export default class LanguageRow extends Component {
                     <Text style={styles.fontTitle}>
                         {this.props.lang.name}
                     </Text>
+                    {this.props.lang.desc &&
+                        <Text style={styles.fontDesc}>
+                            {this.props.lang.desc}
+                        </Text>
+                    }
                 </View>
                 <View style={styles.categBox}>
                     <CategoryList categoriesData={CategoryConstant} navigation={this.props.navigation} />
@@ -26,11 +31,15 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'flex-start',
         marginBottom: 30,
-        
     },
     fontTitle: {
         fontSize: 18,
         marginBottom: 8,
+    },
+    fontDesc: {
+        fontSize: 14,
+        marginBottom: 8,
+        color: '#777777'
     },
     categBox: {
         flexDirection: 'row',

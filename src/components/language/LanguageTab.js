@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { StyleSheet, View } from 'react-native';
 
 import LanguageList from './LanguageList.js';
 import langConstant from '../../data/LanguageConstant.js';
 
-export default class LanguageTab extends Component {
+export default class LanguageTab extends PureComponent {
+
     constructor(props) {
         super(props);
     }
@@ -25,6 +26,7 @@ export default class LanguageTab extends Component {
 const styles = StyleSheet.create({
     tabWrap: {
         flex: 1,
+        backgroundColor: '#EBE7E4',
         padding: 20,
         paddingRight: 0,
     }

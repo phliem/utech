@@ -27,17 +27,17 @@ const TabNavOptions = {
             let icon;
             switch (routeName) {
                 case 'Language List':
-                    icon = require('./src/asset/icon/icon_list.png');
+                    icon = require('./src/asset/icon/icon_code.png');
                     break;
                 case 'Graph View':
-                    icon = require('./src/asset/icon/icon_chart_tree.png');
+                    icon = require('./src/asset/icon/icon_graph.png');
                     break;
                 default:
                     break;
             }
 
             if (icon) {
-                return <Image source={ icon } style={{ width: 20, height: 20 }} />;
+                return <Image source={ icon } style={{ width: 30, height: 30 }} />;
             }
             return null;
         }
@@ -54,7 +54,10 @@ const MainNavRoutes = {
         screen: LoginScreen
     },
     TabScreen: {
-        screen: TabNavigator
+        screen: TabNavigator,
+        navigationOptions: () => ({
+            title: 'Languages',
+        }),
     },
     TechnologyScreen: {
         screen: TechnologyScreen
